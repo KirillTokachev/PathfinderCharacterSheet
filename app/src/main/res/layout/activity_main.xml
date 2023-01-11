@@ -9,5 +9,5 @@
     app:defaultNavHost="true"
     android:layout_width="0dp"
     android:layout_height="0dp"
-    tools:context=".MainActivity">
+    tools:context=".presentation.MainActivity">
 </androidx.fragment.app.FragmentContainerView>

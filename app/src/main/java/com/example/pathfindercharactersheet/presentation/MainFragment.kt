@@ -1,4 +1,4 @@
-package com.example.pathfindercharactersheet
+package com.example.pathfindercharactersheet.presentation
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

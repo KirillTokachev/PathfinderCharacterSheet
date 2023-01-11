@@ -1,10 +1,11 @@
-package com.example.pathfindercharactersheet
+package com.example.pathfindercharactersheet.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
+import com.example.pathfindercharactersheet.R
 import com.example.pathfindercharactersheet.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
