@@ -1,6 +1,8 @@
-package com.example.pathfindercharactersheet.domain.models
+package com.example.pathfindercharactersheet.data.database.db_models
 
-data class Character(
+import com.example.pathfindercharactersheet.domain.models.*
+
+data class CharacterDbModel(
     val id: Long,
     val race: Race,
     val background: Background,
