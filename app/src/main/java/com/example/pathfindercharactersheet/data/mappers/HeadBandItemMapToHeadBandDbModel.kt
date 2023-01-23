@@ -9,6 +9,7 @@ class HeadBandItemMapToHeadBandDbModel : (HeadBandItem) -> HeadBandItemDbModel {
         with(headBandItem) {
             HeadBandItemDbModel(
                 id = id,
+                headBandItemName = headBandItemName,
                 description = description,
                 bonus = bonus
             )

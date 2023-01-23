@@ -4,45 +4,45 @@ import com.example.pathfindercharactersheet.domain.models.*
 
 interface EquipmentRepository {
 
-    fun setArmors(armors: List<Armor>)
-    fun getArmors(): List<Armor>
+    suspend fun downloadArmors(armors: List<Armor>)
+    suspend fun loadArmors(): List<Armor>
 
-    fun setBeltsItem(beltsItem: List<BeltItem>)
-    fun getBeltsItem(): List<BeltItem>
+    suspend fun downloadBeltsItem(beltsItem: List<BeltItem>)
+    suspend fun loadBeltsItem(): List<BeltItem>
 
-    fun setBodyItems(bodyItems: List<BodyItem>)
-    fun getBodyItem(): List<BodyItem>
+    suspend fun downloadBodyItems(bodyItems: List<BodyItem>)
+    suspend fun loadBodyItem(): List<BodyItem>
 
-    fun setChestItems(chestItems: List<ChestItem>)
-    fun getChestItems(): List<ChestItem>
+    suspend fun downloadChestItems(chestItems: List<ChestItem>)
+    suspend fun loadChestItems(): List<ChestItem>
 
-    fun setEyesItems(eyesItems: List<EyesItem>)
-    fun getEyesItems(): List<EyesItem>
+    suspend fun downloadEyesItems(eyesItems: List<EyesItem>)
+    suspend fun loadEyesItems(): List<EyesItem>
 
-    fun setHandItems(handItems: List<HandItem>)
-    fun getHandItems(): List<HandItem>
+    suspend fun downloadHandItems(handItems: List<HandItem>)
+    suspend fun loadHandItems(): List<HandItem>
 
-    fun setHeadBandItems(headBandItems: List<HeadBandItem>)
-    fun getHeadBandItems(): List<HeadBandItem>
+    suspend fun downloadHeadBandItems(headBandItems: List<HeadBandItem>)
+    suspend fun loadHeadBandItems(): List<HeadBandItem>
 
-    fun setHeadItems(headItems: List<HeadItem>)
-    fun getHeadItems(): List<HeadItem>
+    suspend fun downloadHeadItems(headItems: List<HeadItem>)
+    suspend fun loadHeadItems(): List<HeadItem>
 
-    fun setNeckItems(neckItems: List<NeckItem>)
-    fun getNeckItems(): List<NeckItem>
+    suspend fun downloadNeckItems(neckItems: List<NeckItem>)
+    suspend fun loadNeckItems(): List<NeckItem>
 
-    fun setRings(rings: List<Ring>)
-    fun getRings(): List<Ring>
+    suspend fun downloadRings(rings: List<Ring>)
+    suspend fun loadRings(): List<Ring>
 
-    fun setShields(shields: List<Shield>)
-    fun getShields(): List<Shield>
+    suspend fun downloadShields(shields: List<Shield>)
+    suspend fun loadShields(): List<Shield>
 
-    fun setShoulderItems(shoulderItems: List<ShoulderItem>)
-    fun getShoulderItems(): List<ShoulderItem>
+    suspend fun downloadShoulderItems(shoulderItems: List<ShoulderItem>)
+    suspend fun loadShoulderItems(): List<ShoulderItem>
 
-    fun setWeapons(weapons: List<Weapon>)
-    fun getWeapons(): List<Weapon>
+    suspend fun downloadWeapons(weapons: List<Weapon>)
+    suspend fun loadWeapons(): List<Weapon>
 
-    fun setWristItems(wristItems: List<WristsItem>)
-    fun getWristItems(): List<WristsItem>
+    suspend fun downloadWristItems(wristItems: List<WristsItem>)
+    suspend fun loadWristItems(): List<WristsItem>
 }

@@ -7,6 +7,7 @@ import androidx.room.PrimaryKey
 data class BeltItemDbModel(
     @PrimaryKey
     val id: Long,
+    val beltItemName: String,
     val description: String,
     val bonus: Int
 )

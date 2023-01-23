@@ -9,6 +9,7 @@ class WristsItemDbModelMapToWristsItem : (WristsItemDbModel) -> WristsItem {
         with(wristsItemDbModel) {
             WristsItem(
                 id = id,
+                wristsItemName = wristsItemName,
                 description = description,
                 bonus = bonus
             )

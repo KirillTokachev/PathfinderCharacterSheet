@@ -9,6 +9,7 @@ class ShoulderItemMapToShoulderItemDbModel : (ShoulderItem) -> ShoulderItemDbMod
         with(shoulderItem) {
             ShoulderItemDbModel(
                 id = id,
+                shoulderItemName = shoulderItemName,
                 description = description,
                 bonus = bonus
             )

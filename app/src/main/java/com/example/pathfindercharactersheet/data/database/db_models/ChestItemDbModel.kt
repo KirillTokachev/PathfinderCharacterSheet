@@ -7,6 +7,7 @@ import androidx.room.PrimaryKey
 data class ChestItemDbModel(
     @PrimaryKey
     val id: Long,
+    val chestItemName: String,
     val description: String,
     val bonus: Int
 )

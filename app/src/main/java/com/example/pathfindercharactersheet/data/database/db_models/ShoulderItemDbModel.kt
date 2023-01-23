@@ -7,6 +7,7 @@ import androidx.room.PrimaryKey
 data class ShoulderItemDbModel(
     @PrimaryKey
     val id: Long,
+    val shoulderItemName: String,
     val description: String,
     val bonus: Int
 )

@@ -9,6 +9,7 @@ class RaceDbModelMapToRace : (RaceDbModel) -> Race {
         with(raceDbModel) {
             Race(
                 id = id,
+                raceName = raceName,
                 description = description,
                 bonusAbility = bonusAbility
             )

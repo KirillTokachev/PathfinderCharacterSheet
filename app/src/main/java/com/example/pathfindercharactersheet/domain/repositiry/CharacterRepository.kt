@@ -4,7 +4,7 @@ import com.example.pathfindercharactersheet.domain.models.Character
 
 interface CharacterRepository {
 
-    fun setCharacter(character: Character)
+    suspend fun savedCharacter(character: Character)
 
-    fun getCharacter(): Character
+    suspend fun loadCharacter(): Character
 }

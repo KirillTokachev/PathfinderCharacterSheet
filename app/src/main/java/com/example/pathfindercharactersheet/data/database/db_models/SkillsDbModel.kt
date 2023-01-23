@@ -7,6 +7,7 @@ import androidx.room.PrimaryKey
 data class SkillsDbModel(
     @PrimaryKey
     val id: Long,
+    val skillsName: String,
     val description: String,
     val bonus: Int
 )

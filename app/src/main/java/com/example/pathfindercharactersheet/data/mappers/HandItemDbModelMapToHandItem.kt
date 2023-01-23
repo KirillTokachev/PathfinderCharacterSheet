@@ -9,6 +9,7 @@ class HandItemDbModelMapToHandItem : (HandItemDbModel) -> HandItem {
         with(handItemDbModel) {
             HandItem(
                 id = id,
+                handItemName = handItemName,
                 description = description,
                 bonus = bonus
             )

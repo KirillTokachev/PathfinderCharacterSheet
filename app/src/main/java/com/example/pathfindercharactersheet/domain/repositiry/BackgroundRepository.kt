@@ -4,7 +4,7 @@ import com.example.pathfindercharactersheet.domain.models.Background
 
 interface BackgroundRepository {
 
-    fun setBackgrounds(backgrounds: List<Background>)
+    suspend fun downloadBackgrounds(backgrounds: List<Background>)
 
-    fun getBackgrounds(): List<Background>
+    suspend fun loadBackgrounds(): List<Background>
 }

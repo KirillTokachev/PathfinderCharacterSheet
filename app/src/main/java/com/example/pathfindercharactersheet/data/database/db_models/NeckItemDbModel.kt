@@ -7,6 +7,7 @@ import androidx.room.PrimaryKey
 data class NeckItemDbModel(
     @PrimaryKey
     val id: Long,
+    val neckItemName: String,
     val description: String,
     val bonus: Int
 )

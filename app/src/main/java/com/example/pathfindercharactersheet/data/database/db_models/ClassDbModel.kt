@@ -7,6 +7,7 @@ import androidx.room.PrimaryKey
 data class ClassDbModel(
     @PrimaryKey
     val id: Long,
+    val className: String,
     val description: String,
     val alignment: String,
     val hitDice: Int,

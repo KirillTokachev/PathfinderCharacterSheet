@@ -9,6 +9,7 @@ class EyesItemDbModelMapToEyesItem : (EyesItemDbModel) -> EyesItem {
         with(eyesItemDbModel) {
             EyesItem(
                 id = id,
+                eyesItemName = eyesItemName,
                 description = description,
                 bonus = bonus
             )

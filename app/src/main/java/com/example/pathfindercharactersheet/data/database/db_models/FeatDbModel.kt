@@ -7,5 +7,6 @@ import androidx.room.PrimaryKey
 data class FeatDbModel(
     @PrimaryKey
     val id: Long,
+    val featName: String,
     val description: String
 )

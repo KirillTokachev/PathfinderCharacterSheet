@@ -9,6 +9,7 @@ class ShoulderItemDbModelMapToShoulderItem : (ShoulderItemDbModel) -> ShoulderIt
         with(shoulderItemDbModel) {
             ShoulderItem(
                 id = id,
+                shoulderItemName = shoulderItemName,
                 description = description,
                 bonus = bonus
             )

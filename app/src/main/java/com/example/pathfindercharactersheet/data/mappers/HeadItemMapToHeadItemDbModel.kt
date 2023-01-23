@@ -9,6 +9,7 @@ class HeadItemMapToHeadItemDbModel : (HeadItem) -> HeadItemDbModel {
         with(headItem) {
             HeadItemDbModel(
                 id = id,
+                headItemName = headItemName,
                 description = description,
                 bonus = bonus
             )

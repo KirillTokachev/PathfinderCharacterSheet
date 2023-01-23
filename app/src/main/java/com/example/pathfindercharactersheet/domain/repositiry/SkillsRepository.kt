@@ -4,7 +4,7 @@ import com.example.pathfindercharactersheet.domain.models.Skills
 
 interface SkillsRepository {
 
-    fun setSkills(skills: List<Skills>)
+    suspend fun downloadSkills(skills: List<Skills>)
 
-    fun getSkills(): List<Skills>
+    suspend fun loadSkills(): List<Skills>
 }

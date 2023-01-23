@@ -7,6 +7,7 @@ import androidx.room.PrimaryKey
 data class RingDbModel(
     @PrimaryKey
     val id: Long,
+    val ringName: String,
     val description: String,
     val bonus: Int
 )

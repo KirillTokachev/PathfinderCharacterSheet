@@ -4,7 +4,7 @@ import com.example.pathfindercharactersheet.domain.models.Class
 
 interface ClassRepository {
 
-    fun setClasses(classes: List<Class>)
+    suspend fun downloadClasses(classes: List<Class>)
 
-    fun getClasses(): List<Class>
+    suspend fun loadClasses(): List<Class>
 }

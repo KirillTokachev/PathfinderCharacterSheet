@@ -9,6 +9,7 @@ class RaceMapTorRaceDbModel : (Race) -> RaceDbModel {
         with(race) {
             RaceDbModel(
                 id = id,
+                raceName = raceName,
                 description = description,
                 bonusAbility = bonusAbility
             )

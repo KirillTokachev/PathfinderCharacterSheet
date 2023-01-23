@@ -9,6 +9,7 @@ class ClassFeatMapToClassFeatDbModel : (ClassFeat) -> ClassFeatDbModel {
         with(classFeat) {
             ClassFeatDbModel(
                 id = id,
+                classFeatName = classFeatName,
                 description = description
             )
         }

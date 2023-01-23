@@ -9,6 +9,7 @@ class RingDbModelMapToRing : (RingDbModel) -> Ring {
         with(ringDbModel) {
             Ring(
                 id = id,
+                ringName = ringName,
                 description = description,
                 bonus = bonus
             )

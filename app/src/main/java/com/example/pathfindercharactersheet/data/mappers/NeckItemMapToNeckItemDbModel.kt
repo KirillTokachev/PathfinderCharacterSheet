@@ -9,6 +9,7 @@ class NeckItemMapToNeckItemDbModel : (NeckItem) -> NeckItemDbModel {
         with(neckItem) {
             NeckItemDbModel(
                 id = id,
+                neckItemName = neckItemName,
                 description = description,
                 bonus = bonus
             )

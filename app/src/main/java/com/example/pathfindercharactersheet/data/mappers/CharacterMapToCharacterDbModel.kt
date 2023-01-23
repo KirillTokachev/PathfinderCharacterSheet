@@ -9,6 +9,7 @@ class CharacterMapToCharacterDbModel: (Character) -> CharacterDbModel {
         with(character) {
             CharacterDbModel(
                 id = id,
+                name = name,
                 race = race,
                 background = background,
                 _class = _class,

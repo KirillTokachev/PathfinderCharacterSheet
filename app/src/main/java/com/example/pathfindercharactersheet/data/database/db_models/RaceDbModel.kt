@@ -7,6 +7,7 @@ import androidx.room.PrimaryKey
 data class RaceDbModel(
     @PrimaryKey
     val id: Long,
+    val raceName: String,
     val description: String,
     val bonusAbility: Int
 )

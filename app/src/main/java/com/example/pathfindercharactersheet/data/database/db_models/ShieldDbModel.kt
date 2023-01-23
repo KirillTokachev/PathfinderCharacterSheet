@@ -8,7 +8,7 @@ data class ShieldDbModel(
     @PrimaryKey
     val id: Long,
     val category: String,
-    val armorName: String,
+    val shieldName: String,
     val cost: Int,
     val bonus: Int,
     val maxDexBonus: Int,

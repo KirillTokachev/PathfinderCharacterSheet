@@ -7,6 +7,7 @@ import androidx.room.PrimaryKey
 data class EyesItemDbModel(
     @PrimaryKey
     val id: Long,
+    val eyesItemName: String,
     val description: String,
     val bonus: Int
 )

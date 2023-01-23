@@ -2,6 +2,7 @@ package com.example.pathfindercharactersheet.domain.models
 
 data class Character(
     val id: Long,
+    val name: String,
     val race: Race,
     val background: Background,
     val _class: Class,

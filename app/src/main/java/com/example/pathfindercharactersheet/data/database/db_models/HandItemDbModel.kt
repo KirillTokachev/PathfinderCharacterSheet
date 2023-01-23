@@ -7,6 +7,7 @@ import androidx.room.PrimaryKey
 data class HandItemDbModel(
     @PrimaryKey
     val id: Long,
+    val handItemName: String,
     val description: String,
     val bonus: Int
 )

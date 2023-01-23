@@ -1,9 +1,14 @@
 package com.example.pathfindercharactersheet.data.database.db_models
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.example.pathfindercharactersheet.domain.models.*
 
+@Entity(tableName = "characters")
 data class CharacterDbModel(
+    @PrimaryKey
     val id: Long,
+    val name: String,
     val race: Race,
     val background: Background,
     val _class: Class,

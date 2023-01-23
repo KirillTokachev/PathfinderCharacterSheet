@@ -4,7 +4,7 @@ import com.example.pathfindercharactersheet.domain.models.Race
 
 interface RaceRepository {
 
-    fun setRaces(races: List<Race>)
+    suspend fun downloadRaces(races: List<Race>)
 
-    fun getRaces(): List<Race>
+    suspend fun loadRaces(): List<Race>
 }

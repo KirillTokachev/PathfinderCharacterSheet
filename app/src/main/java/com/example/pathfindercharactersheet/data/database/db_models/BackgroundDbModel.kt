@@ -7,5 +7,6 @@ import androidx.room.PrimaryKey
 data class BackgroundDbModel(
     @PrimaryKey
     val id: Long,
+    val backgroundName: String,
     val description: String
 )

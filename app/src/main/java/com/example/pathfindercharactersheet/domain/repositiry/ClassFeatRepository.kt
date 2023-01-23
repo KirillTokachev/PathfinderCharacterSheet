@@ -4,7 +4,7 @@ import com.example.pathfindercharactersheet.domain.models.ClassFeat
 
 interface ClassFeatRepository {
 
-    fun setClassFeats(classFeats: List<ClassFeat>)
+   suspend fun downloadClassFeats(classFeats: List<ClassFeat>)
 
-    fun getClassFeats(): List<ClassFeat>
+   suspend fun loadClassFeats(): List<ClassFeat>
 }

@@ -2,6 +2,7 @@ package com.example.pathfindercharactersheet.domain.models
 
 data class Class(
     val id: Long,
+    val className: String,
     val description: String,
     val alignment: String,
     val hitDice: Int,

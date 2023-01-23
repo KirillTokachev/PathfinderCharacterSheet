@@ -7,6 +7,7 @@ import androidx.room.PrimaryKey
 data class BodyItemDbModel(
     @PrimaryKey
     val id: Long,
+    val bodyItemName: String,
     val description: String,
     val bonus: Int
 )

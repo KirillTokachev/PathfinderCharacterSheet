@@ -11,6 +11,7 @@ class ClassMapToClassDbModel: (Class) -> ClassDbModel {
         with(_class) {
             ClassDbModel(
                 id = id,
+                className = className,
                 description = description,
                 alignment = alignment,
                 hitDice = hitDice,

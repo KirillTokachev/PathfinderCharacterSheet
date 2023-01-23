@@ -9,6 +9,7 @@ class BackgroundDbModelMapToBackground : (BackgroundDbModel) -> Background {
         with(backgroundDbModel) {
             Background(
                 id = id,
+                backgroundName = backgroundName,
                 description = description
             )
         }

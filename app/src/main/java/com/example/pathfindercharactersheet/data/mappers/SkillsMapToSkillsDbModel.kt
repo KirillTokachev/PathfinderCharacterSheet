@@ -9,6 +9,7 @@ class SkillsMapToSkillsDbModel : (Skills) -> SkillsDbModel {
         with(skills) {
             SkillsDbModel(
                 id = id,
+                skillsName = skillsName,
                 description = description,
                 bonus = bonus
             )

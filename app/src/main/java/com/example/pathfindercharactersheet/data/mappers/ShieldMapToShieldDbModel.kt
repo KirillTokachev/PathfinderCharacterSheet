@@ -10,7 +10,7 @@ class ShieldMapToShieldDbModel : (Shield) -> ShieldDbModel {
             ShieldDbModel(
                 id = id,
                 category = category,
-                armorName = armorName,
+                shieldName = shieldName,
                 cost = cost,
                 bonus = bonus,
                 maxDexBonus = maxDexBonus,
