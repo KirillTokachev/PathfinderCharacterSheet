@@ -5,8 +5,9 @@ import com.example.pathfindercharactersheet.data.mappers.AbilityDbModelMapToAbil
 import com.example.pathfindercharactersheet.data.mappers.AbilityMapToAbilityDbModel
 import com.example.pathfindercharactersheet.domain.models.Ability
 import com.example.pathfindercharactersheet.domain.repositiry.AbilityRepository
+import javax.inject.Inject
 
-class AbilityRepositoryImpl(
+class AbilityRepositoryImpl @Inject constructor(
     private val abilityDao: AbilityDao,
     private val abilityMapToAbilityDbModel: AbilityMapToAbilityDbModel,
     private val abilityDbModelMapToAbility: AbilityDbModelMapToAbility

@@ -7,8 +7,9 @@ import com.example.pathfindercharactersheet.domain.models.Class
 import com.example.pathfindercharactersheet.domain.models.ClassFeat
 import com.example.pathfindercharactersheet.domain.repositiry.ClassFeatRepository
 import com.example.pathfindercharactersheet.domain.repositiry.ClassRepository
+import javax.inject.Inject
 
-class ClassRepositoryImpl(
+class ClassRepositoryImpl @Inject constructor(
         private val classDao: ClassDao,
         private val classDbModelMapToClass: ClassDbModelMapToClass,
         private val classMapToClassDbModel: ClassMapToClassDbModel

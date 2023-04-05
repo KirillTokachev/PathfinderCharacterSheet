@@ -5,8 +5,9 @@ import com.example.pathfindercharactersheet.data.mappers.SkillsDbModelMapToSkill
 import com.example.pathfindercharactersheet.data.mappers.SkillsMapToSkillsDbModel
 import com.example.pathfindercharactersheet.domain.models.Skills
 import com.example.pathfindercharactersheet.domain.repositiry.SkillsRepository
+import javax.inject.Inject
 
-class SkillsRepositoryImpl (
+class SkillsRepositoryImpl @Inject constructor(
     private val skillsDao: SkillsDao,
     private val skillsDbModelMapToSkills: SkillsDbModelMapToSkills,
     private val skillsMapToSkillsDbModel: SkillsMapToSkillsDbModel

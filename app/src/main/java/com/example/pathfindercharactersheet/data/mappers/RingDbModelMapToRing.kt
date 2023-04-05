@@ -2,8 +2,9 @@ package com.example.pathfindercharactersheet.data.mappers
 
 import com.example.pathfindercharactersheet.data.database.db_models.RingDbModel
 import com.example.pathfindercharactersheet.domain.models.Ring
+import javax.inject.Inject
 
-class RingDbModelMapToRing : (RingDbModel) -> Ring {
+class RingDbModelMapToRing @Inject constructor() : (RingDbModel) -> Ring {
 
     override fun invoke(ringDbModel: RingDbModel) =
         with(ringDbModel) {

@@ -5,8 +5,9 @@ import com.example.pathfindercharactersheet.data.mappers.RaceDbModelMapToRace
 import com.example.pathfindercharactersheet.data.mappers.RaceMapTorRaceDbModel
 import com.example.pathfindercharactersheet.domain.models.Race
 import com.example.pathfindercharactersheet.domain.repositiry.RaceRepository
+import javax.inject.Inject
 
-class RaceRepositoryImpl (
+class RaceRepositoryImpl @Inject constructor(
     private val raceDao: RaceDao,
     private val raceDbModelMapToRace: RaceDbModelMapToRace,
     private val raceMapTorRaceDbModel: RaceMapTorRaceDbModel

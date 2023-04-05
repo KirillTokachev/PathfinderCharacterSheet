@@ -2,7 +2,12 @@ package com.example.pathfindercharactersheet.data.database.db_models
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import androidx.room.TypeConverter
+import androidx.room.TypeConverters
+import com.example.pathfindercharactersheet.data.database.type_converters.ClassFeatConverter
+import com.example.pathfindercharactersheet.data.database.type_converters.SkillsConverter
 
+@kotlinx.serialization.Serializable
 @Entity(tableName = "classes")
 data class ClassDbModel(
     @PrimaryKey
@@ -17,7 +22,9 @@ data class ClassDbModel(
     val fortitude: Int,
     val reflex: Int,
     val will: Int,
+    @field:TypeConverters(ClassFeatConverter::class)
     val classFeats: List<ClassFeatDbModel>,
+    @field:TypeConverters(SkillsConverter::class)
     val classSkills: List<SkillsDbModel>,
     val extraordinaryAbilities: String
 )

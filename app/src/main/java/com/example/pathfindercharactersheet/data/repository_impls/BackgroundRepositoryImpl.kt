@@ -5,8 +5,9 @@ import com.example.pathfindercharactersheet.data.mappers.BackgroundDbModelMapToB
 import com.example.pathfindercharactersheet.data.mappers.BackgroundMapToBackgroundDbModel
 import com.example.pathfindercharactersheet.domain.models.Background
 import com.example.pathfindercharactersheet.domain.repositiry.BackgroundRepository
+import javax.inject.Inject
 
-class BackgroundRepositoryImpl(
+class BackgroundRepositoryImpl @Inject constructor(
         private val backgroundDao: BackgroundDao,
         private val backgroundDbModelMapToBackground: BackgroundDbModelMapToBackground,
         private val backgroundMapToBackgroundDbModel: BackgroundMapToBackgroundDbModel

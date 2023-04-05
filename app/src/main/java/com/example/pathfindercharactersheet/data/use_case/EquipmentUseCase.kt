@@ -2,8 +2,9 @@ package com.example.pathfindercharactersheet.data.use_case
 
 import com.example.pathfindercharactersheet.domain.models.*
 import com.example.pathfindercharactersheet.domain.repositiry.EquipmentRepository
+import javax.inject.Inject
 
-class EquipmentUseCase(
+class EquipmentUseCase @Inject constructor(
     private val repository: EquipmentRepository
 ) {
 

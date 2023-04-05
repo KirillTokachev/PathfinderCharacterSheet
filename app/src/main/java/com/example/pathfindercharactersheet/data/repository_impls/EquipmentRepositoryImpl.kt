@@ -4,8 +4,9 @@ import com.example.pathfindercharactersheet.data.database.dao.EquipmentDao
 import com.example.pathfindercharactersheet.data.mappers.*
 import com.example.pathfindercharactersheet.domain.models.*
 import com.example.pathfindercharactersheet.domain.repositiry.EquipmentRepository
+import javax.inject.Inject
 
-class EquipmentRepositoryImpl (
+class EquipmentRepositoryImpl @Inject constructor(
     private val equipmentDao: EquipmentDao,
     private val armorDbModelMapToArmor: ArmorDbModelMapToArmor,
     private val armorMapToArmorDbModel: ArmorMapToArmorDbModel,

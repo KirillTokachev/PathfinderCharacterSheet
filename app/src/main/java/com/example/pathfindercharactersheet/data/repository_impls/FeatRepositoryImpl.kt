@@ -5,8 +5,9 @@ import com.example.pathfindercharactersheet.data.mappers.FeatDbModelMapToFeat
 import com.example.pathfindercharactersheet.data.mappers.FeatMapToFeatDbModel
 import com.example.pathfindercharactersheet.domain.models.Feat
 import com.example.pathfindercharactersheet.domain.repositiry.FeatRepository
+import javax.inject.Inject
 
-class FeatRepositoryImpl (
+class FeatRepositoryImpl @Inject constructor(
     private val featDao: FeatDao,
     private val featMapToFeatDbModel: FeatMapToFeatDbModel,
     private val featDbModelMapToFeat: FeatDbModelMapToFeat

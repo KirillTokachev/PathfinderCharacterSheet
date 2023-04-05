@@ -2,8 +2,9 @@ package com.example.pathfindercharactersheet.data.use_case
 
 import com.example.pathfindercharactersheet.domain.repositiry.ClassRepository
 import com.example.pathfindercharactersheet.domain.models.Class
+import javax.inject.Inject
 
-class DownloadClassUseCase(
+class DownloadClassUseCase @Inject constructor(
     private val repository: ClassRepository
 ) {
 

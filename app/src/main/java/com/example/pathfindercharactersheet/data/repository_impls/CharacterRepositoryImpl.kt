@@ -5,8 +5,9 @@ import com.example.pathfindercharactersheet.data.mappers.CharacterDbModelMapToCh
 import com.example.pathfindercharactersheet.data.mappers.CharacterMapToCharacterDbModel
 import com.example.pathfindercharactersheet.domain.models.Character
 import com.example.pathfindercharactersheet.domain.repositiry.CharacterRepository
+import javax.inject.Inject
 
-class CharacterRepositoryImpl (
+class CharacterRepositoryImpl @Inject constructor(
     private val characterDao: CharacterDao,
     private val characterDbModelMapToCharacter: CharacterDbModelMapToCharacter,
     private val characterMapToCharacterDbModel: CharacterMapToCharacterDbModel

@@ -2,8 +2,9 @@ package com.example.pathfindercharactersheet.data.mappers
 
 import com.example.pathfindercharactersheet.data.database.db_models.ShieldDbModel
 import com.example.pathfindercharactersheet.domain.models.Shield
+import javax.inject.Inject
 
-class ShieldMapToShieldDbModel : (Shield) -> ShieldDbModel {
+class ShieldMapToShieldDbModel @Inject constructor() : (Shield) -> ShieldDbModel {
 
     override fun invoke(shield: Shield) =
         with(shield) {

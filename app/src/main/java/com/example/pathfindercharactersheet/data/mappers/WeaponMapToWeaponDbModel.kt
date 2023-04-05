@@ -2,8 +2,9 @@ package com.example.pathfindercharactersheet.data.mappers
 
 import com.example.pathfindercharactersheet.data.database.db_models.WeaponDbModel
 import com.example.pathfindercharactersheet.domain.models.Weapon
+import javax.inject.Inject
 
-class WeaponMapToWeaponDbModel : (Weapon) -> WeaponDbModel {
+class WeaponMapToWeaponDbModel @Inject constructor() : (Weapon) -> WeaponDbModel {
 
     override fun invoke(weapon: Weapon) =
         with(weapon) {

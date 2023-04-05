@@ -1,5 +1,6 @@
 package com.example.pathfindercharactersheet.domain.models
 
+
 data class Class(
     val id: Long,
     val className: String,

@@ -3,9 +3,13 @@ package com.example.pathfindercharactersheet.data.mappers
 import com.example.pathfindercharactersheet.data.database.db_models.ClassDbModel
 import com.example.pathfindercharactersheet.data.database.db_models.ClassFeatDbModel
 import com.example.pathfindercharactersheet.domain.models.Class
+import javax.inject.Inject
 
 
-class ClassMapToClassDbModel: (Class) -> ClassDbModel {
+class ClassMapToClassDbModel @Inject constructor(
+    val classFeatMapToClassFeatDbModel: ClassFeatMapToClassFeatDbModel,
+    val skillsMapToSkillsDbModel: SkillsMapToSkillsDbModel
+) : (Class) -> ClassDbModel {
 
     override fun invoke(_class: Class) =
         with(_class) {
@@ -21,8 +25,8 @@ class ClassMapToClassDbModel: (Class) -> ClassDbModel {
                 fortitude = fortitude,
                 reflex = reflex,
                 will = will,
-                classFeats = listOf(),
-                classSkills = listOf(),
+                classFeats = classFeats.map {classFeatMapToClassFeatDbModel(it)},
+                classSkills = classSkills.map {skillsMapToSkillsDbModel(it)},
                 extraordinaryAbilities = extraordinaryAbilities
             )
         }
