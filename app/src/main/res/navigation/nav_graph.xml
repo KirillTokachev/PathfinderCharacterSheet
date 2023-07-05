@@ -9,5 +9,14 @@
         android:id="@+id/mainFragment"
         android:name="com.example.pathfindercharactersheet.presentation.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_createCharacterFragment"
+            app:destination="@id/createCharacterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createCharacterFragment"
+        android:name="com.example.pathfindercharactersheet.presentation.CreateCharacterFragment"
+        android:label="fragment_create_character"
+        tools:layout="@layout/fragment_create_character" />
 </navigation>
